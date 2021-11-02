@@ -60,10 +60,35 @@ body {
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  .nav {
+    padding: 2rem 0 4rem;
+  }
+  .nav .menu-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav .menu-list > * {
+    margin: 1rem unset;
+    padding: 0.5rem 0;
+  }
+
+  .nav img {
+    margin-left: 2rem;
+  }
+}
+
 .payment {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 3rem 0 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .payment {
+    grid-template-columns: 1fr;
+  }
 }
 
 .blur-text {
@@ -77,6 +102,13 @@ body {
   padding: 2rem;
   margin: 1rem 0;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .credit-card {
+    width: 100%;
+    padding: 1.3rem;
+  }
 }
 
 .credit-card > * {
@@ -102,6 +134,12 @@ body {
   user-select: none;
 }
 
+@media screen and (max-width: 480px) {
+  .card-footer img {
+    width: 150px;
+  }
+}
+
 .payment-info .companies {
   display: flex;
   align-items: center;
@@ -118,6 +156,11 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin: 1rem 0 0;
+}
+@media screen and (max-width: 380px) {
+  .form-arrange {
+    grid-template-columns: 1fr;
+  }
 }
 
 .form-details {
@@ -167,4 +210,18 @@ body {
 .total .btn {
   width: unset;
   padding: 0 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .t-first {
+    font-size: 0.8rem;
+  }
+  .t-last {
+    flex-direction: column-reverse;
+  }
+
+  .t-last .btn {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
 }
