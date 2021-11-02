@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>NCK - Payment Details</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <ul class="menu-list">
+          <li class="menu-item">TRIPS</li>
+          <li class="menu-item">RECENTLY VIEWED</li>
+          <li class="menu-item">BOOKINGS</li>
+          <li class="menu-item nav-img">
+            <img src="./img/face.jpg" alt="An avatar" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr />
+    <main>
+      <section class="payment">
+        <div class="payment-info1">
+          <h2>Payment Info</h2>
+          <p class="blur-text">Choose your method of payment</p>
+
+          <div class="credit-card">
+            <h4>CARD NUMBER</h4>
+            <p>4324 5433 9382 1030</p>
+            <img
+              src="./img/chip.png"
+              class="chip"
+              alt="Card chips on credit cards"
+            />
+            <h4>EXPIRATION DATE</h4>
+            <p>03/24</p>
+
+            <div class="card-footer">
+              <h2>John Doe</h2>
+              <img src="./img/mastercard.png" alt="mastercard-logo" />
+            </div>
+          </div>
+        </div>
+        <div class="payment-info">
+          <div class="companies">
+            <img src="./img/visa.jpg" alt="Visa Logo" />
+            <img src="./img/discover-logo.png" alt="Discover Logo" />
+            <img src="./img/paypal.png" alt="Paypal Logo" />
+          </div>
+
+          <form class="form">
+            <div class="form-arrange">
+              <div class="form-details">
+                <label for="credit-card">Credit Card</label>
+                <input
+                  type="text"
+                  name="credit-card"
+                  placeholder="4324   5433  9382  1030"
+                />
+              </div>
+              <div class="form-details">
+                <label for="expiration-date">Expiration Date</label>
+                <input type="text" name="expiration-date" placeholder="03/24" />
+              </div>
+            </div>
+
+            <div class="form-arrange">
+              <div class="form-details">
+                <label for="security-code">Security Code</label>
+                <input type="text" name="security-code" placeholder="420" />
+              </div>
+              <div class="form-details">
+                <label for="postal-code">Postal Code</label>
+                <input type="text" name="postal-code" placeholder="10119" />
+              </div>
+            </div>
+
+            <div class="form-radio">
+              <input type="radio" />
+              <label for="next-time"
+                >Use this card for next time purchase</label
+              >
+            </div>
+            <button type="submit" class="btn">Add Card</button>
+          </form>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="total">
+        <div class="items">
+          <h2>Subtotal</h2>
+          <h2>Estimated Tax</h2>
+          <h2>Promotional Code: <span class="blur-text">Z4KXLM9A</span></h2>
+        </div>
+        <div class="items">
+          <h2>₦2,497.00</h2>
+          <h2>₦119.64</h2>
+          <h2>₦-60.00</h2>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="total">
+        <button type="submit" class="btn">Complete Payment</button>
+        <h2>TOTAL: ₦2556.64</h2>
+      </section>
+    </main>
+  </body>
+</html>
