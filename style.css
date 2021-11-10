@@ -209,6 +209,10 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 2rem 0 4rem;
+
+}
+.total h2 {
+  font-weight: 500;
 }
 
 .total .btn {
